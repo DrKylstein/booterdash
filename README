@@ -1,0 +1,31 @@
+A procedurally generated puzzle game that fits inside the Master Boot Record of 
+a drive.
+
+When installed to a bootable drive, it will boot the computer directly into the 
+game. No files or partitions on the disk are modified, and the game is not 
+visible on the disk when inside an operating system.
+
+Builds and installs using JWASM and GNU Make on Linux.
+
+Install at your own risk! Do not install or use on drives or computers you do 
+not own! Not guaranteed to work on all computers. It is strongly discouraged to 
+install to an internal drive or one that may be used to boot or install an 
+operating system at any time in the future. Change the "install_drive" path in 
+the Makefile to point to a connected and unmounted usb drive before running 
+`make install` as root. This program is distributed without any warranty, see 
+COPYING for details.
+
+If a debugging build of dosbox is available as `dosbox-debug`, `make run` will 
+attempt to use it to run the game without modifying any disks. 
+
+This game is written for a 16-bit Legacy BIOS environment and will probably not 
+work on UEFI systems. Mid-2000s to early 2010s desktops and laptops seem to 
+work. It is also intended for classic MBR disks, and may corrupt formats 
+developed for 2TB+ disks.
+
+
+How To Play:
+Use the arrow keys to move the smiley face. Collect all the diamonds without 
+being crushed by falling boulders or diamonds. When all the diamonds are 
+collected, go to the flashing exit. Press 'S' to skip a level if you or a 
+diamond become trapped.
